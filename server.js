@@ -6,8 +6,8 @@ const port = process.env.PORT || 8080;
 
 var app = express();
 
-var staticPath = __dirname + '\\public';
-var partialsPath = __dirname + '\\views\\partials';
+var staticPath = __dirname + '/public';
+var partialsPath = __dirname + '/views/partials';
 
 console.log('Static:', staticPath);
 console.log('Partials:', partialsPath);
