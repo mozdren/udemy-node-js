@@ -44,7 +44,10 @@ hbs.registerHelper('scream', (text) => {
 });
 
 app.get('/', (request, response) => {
-    response.send({name: 'Karel', hobbies: [{name: 'h1'}]});
+    response.render('index.hbs', {
+        title: 'Index',
+        content: 'Some text'
+    });
 });
 
 app.get('/bad', (request, response) => {
