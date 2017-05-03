@@ -61,6 +61,13 @@ app.get('/about', (request, response) => {
     });
 });
 
+app.get('/projects', (request, response) => {
+    response.render('projects.hbs', {
+        title: 'Projects',
+        content: 'Some portfolio text...'
+    });
+});
+
 app.listen(port, () => {
     console.log('listening on port', port);
 });
